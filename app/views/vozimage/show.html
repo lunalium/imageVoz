@@ -1,0 +1,25 @@
+<div id="showimg">
+<%= will_paginate @image %>
+<table class="table table-striped" id="fixtable">
+    <tr>
+        <th>Page</th>
+        <th>Image</th>
+        <th></th>
+    </tr>
+
+    <% @image.each do |image| %>
+    <tr>
+        <td style="width:200px;"><%= image.page %></td>
+        <td style="width:425px;"><%= image_tag image.image,height: 'auto', width: '425' %></td>
+        <td style="width:200px;float: right;"><%= link_to 'Edit', edit_vozimage_path(image) %>
+            <%= link_to 'Destroy', vozimage_path(image),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Save',save_vozimage_path(:id =>image) %>
+        </td>
+
+    </tr>
+    <% end %>
+</table>
+<%= will_paginate @image %>
+</div>

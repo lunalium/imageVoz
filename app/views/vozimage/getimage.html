@@ -1,0 +1,31 @@
+
+<%= form_for vozimage_post_path, html: { method: :post, class: 'form-horizontal' } do %>
+<div class="form-group">
+<%= label_tag(:p, "Claw for link:",class: "col-sm-2 control-label") %>
+  <div class="col-sm-6">
+<%= text_field_tag 'p', nil, placeholder: 'Enter link...',class: "form-control" %> </p>
+</div>
+</div>
+<div class="form-group">
+<%= label_tag(:pnumber, "Nhập trang bắt đầu:",class: "col-sm-2 control-label") %>
+  <div class="col-sm-6">
+<%= text_field_tag(:pbegin,nil,class: "form-control") %> </p>
+</div>
+</div>
+<div class="form-group">
+<%= label_tag(:pnumber, "Nhập trang kết thúc:",class: "col-sm-2 control-label") %>
+  <div class="col-sm-6">
+<%= text_field_tag(:pend,nil,class: "form-control") %> </p>
+</div>
+</div>
+<div style="">
+<%= radio_button_tag(:link, "http://vozforums.com/showthread.php?t=2065093") %>
+<%= label_tag(:link_Vn, " [From F17 With Love] - Thread Girl Việt Xinh - UPDATED 23.03.2014 ") %> </p>
+
+<%= radio_button_tag(:link, "http://vozforums.com/showthread.php?t=3334493") %>
+<%= label_tag(:link_doi, "Post 1 tấm ảnh về Cô gái mà bạn cho là xinh nhất mà bạn từng gặp trong đời?!") %> </p>
+</div>
+<%= submit_tag "Get Image", class: "btn btn-primary" %>
+
+<% end %>
+

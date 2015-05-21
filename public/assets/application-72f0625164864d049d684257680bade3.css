@@ -1,0 +1,599 @@
+/*if you just want to adjust the size of the stage and the thumbnails, you can do so by editing the following lines: */
+/* line 3, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-thumbs li {
+  width: 144px;
+  height: 74px;
+  border-radius: 2px;
+}
+
+/* line 6, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage {
+  height: 250px;
+}
+
+/* line 9, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+a {
+  color: white;
+}
+
+/* line 10, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pikachoose {
+  width: 506px;
+  margin: 0 auto;
+}
+
+/* line 11, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage {
+  position: relative;
+  border: 3px solid #010101;
+  box-shadow: 5px 5px 2px #888;
+  border-radius: 5px;
+}
+
+/*if you change the padding on pika-stage you must adjust the top left of this to match! */
+/* line 17, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage .main-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 18, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage .pika-aniwrap {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* line 19, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage .pika-ani {
+  position: relative;
+  display: none;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+/* line 20, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage img {
+  border: 0;
+  height: 100%;
+}
+
+/* line 22, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage .caption {
+  position: absolute;
+  background: url(75-black.png);
+  font-size: 14px;
+  background-color: #2BA9D1;
+  padding: 10px;
+  text-align: right;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* line 23, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-stage .caption p {
+  padding: 0;
+  margin: 0;
+  line-height: 14px;
+}
+
+/* line 25, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-imgnav a {
+  position: absolute;
+  text-indent: -5000px;
+  display: block;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* line 26, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-imgnav a.previous {
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid #FFF;
+  border-top: 5px solid #FFF;
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  top: 45%;
+  left: 10px;
+}
+
+/* line 28, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-imgnav a.next {
+  width: 20px;
+  height: 20px;
+  border-right: 5px solid #FFF;
+  border-top: 5px solid #FFF;
+  opacity: 0;
+  -webkit-transition: opacity 300ms linear;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+  top: 45%;
+  right: 10px;
+}
+
+/* line 30, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-imgnav a:hover {
+  opacity: .6;
+  -webkit-transition: opacity 300ms linear;
+}
+
+/* line 32, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-imgnav a.play {
+  border-color: transparent transparent rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-width: 0 0 25px 25px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+  top: 14px;
+  left: 47%;
+  display: none;
+}
+
+/* line 34, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-imgnav a.pause {
+  display: none;
+  border-left: 5px solid rgba(255, 255, 255, 0.7);
+  border-right: 5px solid rgba(255, 255, 255, 0.8);
+  height: 30px;
+  width: 14px;
+  position: absolute;
+  top: 10px;
+  left: 47%;
+}
+
+/* line 36, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-textnav {
+  display: none;
+}
+
+/* line 38, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-thumbs {
+  margin: 10px 0 0 17px;
+  padding: 0;
+}
+
+/* line 39, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-thumbs li {
+  float: left;
+  list-style-type: none;
+  margin: 0 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px #888;
+}
+
+/* line 42, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-thumbs li:last {
+  margin: 0;
+}
+
+/* line 43, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-thumbs li .clip {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  vertical-align: center;
+  overflow: hidden;
+}
+
+/*for the tool tips*/
+/* line 46, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-tooltip {
+  font-size: 12px;
+  position: absolute;
+  color: white;
+  padding: 3px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 3px solid black;
+}
+
+/* line 47, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.pika-counter {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 11px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+/* jCarousel Styles */
+/*if you're not using the carousel you can delete everything below this */
+/* line 52, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.jcarousel-skin-pika .jcarousel-container-horizontal {
+  padding: 15px 20px;
+  overflow: hidden;
+}
+
+/* line 53, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.jcarousel-skin-pika .jcarousel-clip-horizontal {
+  height: 90px;
+  width: 485px;
+}
+
+/* line 54, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/css3.css.scss */
+.jcarousel-skin-pika .jcarousel-item-horizontal {
+  margin-right: 10px;
+}
+/* line 1, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/print.css.scss */
+body {
+  color: #000000;
+  background: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+}
+
+/* line 8, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/print.css.scss */
+a {
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+/* line 13, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/print.css.scss */
+a:link:after, a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 70%;
+}
+
+/* line 18, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/print.css.scss */
+nav, sidebar, footer, header, aside {
+  display: none;
+}
+/* Created by http://freehtml5templates.com */
+/* reset */
+/* line 5, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* render html5 elements as block */
+/* line 11, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+header, footer, section, aside, nav, article {
+  display: block;
+}
+
+/* line 15, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+body {
+  line-height: 1;
+  background-image: url(bg.png);
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* line 29, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+#container {
+  position: relative;
+  width: 980px;
+  margin-top: 0 auto;
+  background-color: transparent;
+  padding: 15px;
+  text-align: left;
+}
+
+/* line 39, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+header img {
+  width: 221px;
+  height: auto;
+}
+
+/*******Menu******/
+/* line 45, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+nav {
+  position: absolute;
+  width: 620px;
+  top: 43px;
+  right: 12px;
+  background: transparent;
+}
+
+/* line 54, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+nav ul li {
+  float: left;
+  line-height: normal;
+}
+
+/* line 60, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+nav ul li a {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-transform: capitalize;
+  font-weight: normal;
+  display: block;
+  /* IE6, IE7 line height fix */
+  padding: 15px;
+  background-color: transparent;
+  margin-top: 0px;
+  margin-right: 6px;
+  text-decoration: none;
+}
+
+/* line 74, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+nav ul li a:hover {
+  color: gray;
+}
+
+/* line 78, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+#group-banner-right {
+  position: absolute;
+  width: 490px;
+  height: auto;
+  right: -50px;
+  background: transparent;
+  margin-top: 50px;
+}
+
+/* line 86, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+#group-banner-left {
+  position: absolute;
+  width: 490px;
+  height: auto;
+  left: 50px;
+  background: transparent;
+  margin-top: 50px;
+}
+
+/* line 94, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+div div img {
+  width: 240px;
+  height: auto;
+}
+
+/* line 100, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+td img {
+  width: 425px;
+  height: auto;
+}
+
+/* line 106, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+#find {
+  position: relative;
+  width: 960px;
+  height: 450px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+/* line 114, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+.holder_content {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  background: transparent;
+  background: url(../images/line.png) 0 -18px no-repeat;
+}
+
+/* line 126, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+.holder_content1 {
+  position: relative;
+  float: top;
+  width: 980px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  background: url(../images/line.png) 0 -18px no-repeat;
+}
+
+/* line 135, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+#intro {
+  position: relative;
+  float: top;
+  width: auto;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+/* line 144, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+.holder_content_separator {
+  margin-bottom: 20px;
+}
+
+/* line 148, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+form {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-transform: capitalize;
+  font-weight: normal;
+  display: block;
+  /* IE6, IE7 line height fix */
+  background-color: transparent;
+  margin-top: 0px;
+  margin-right: 6px;
+  text-decoration: none;
+}
+
+/* line 161, /home/winter/RubymineProjects/imageVoz/app/assets/stylesheets/styles.css.scss */
+footer {
+  position: relative;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2px;
+  text-decoration: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *@import "bootstrap-sprockets";
+ *@import "bootstrap";
+
+
+
+ */
+/* line 1, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+#gritter-notice-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 301px;
+  z-index: 9999;
+}
+/* line 8, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+#gritter-notice-wrapper.top-left {
+  left: 20px;
+  right: auto;
+}
+/* line 13, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+#gritter-notice-wrapper.bottom-right {
+  top: auto;
+  left: auto;
+  bottom: 20px;
+  right: 20px;
+}
+/* line 20, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+#gritter-notice-wrapper.bottom-left {
+  top: auto;
+  right: auto;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* line 28, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-item-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+  background: url("/assets/ie-spacer.gif");
+}
+
+/* line 34, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-top {
+  background: url("/assets/gritter.png") no-repeat left -30px;
+  height: 10px;
+}
+
+/* line 38, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.hover .gritter-top {
+  background-position: right -30px;
+}
+
+/* line 41, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-bottom {
+  background: url("/assets/gritter.png") no-repeat left bottom;
+  height: 8px;
+  margin: 0;
+}
+
+/* line 46, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.hover .gritter-bottom {
+  background-position: bottom right;
+}
+
+/* line 50, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-item {
+  display: block;
+  color: #eee;
+  padding: 2px 11px 8px 11px;
+  font-size: 11px;
+  font-family: verdana;
+  -webkit-filter: inherit;
+          filter: inherit;
+}
+/* line 58, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-item.gritter-css2 {
+  background: url("/assets/gritter.png") no-repeat left -40px;
+}
+/* line 61, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-item.gritter-css3 {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+/* line 70, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-item p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 75, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.hover .gritter-item.gritter-css2 {
+  background-position: right -40px;
+}
+
+/* line 78, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.hover .gritter-item.gritter-css3 {
+  padding: 10px 9px 14px 9px;
+  border: solid 2px #fff;
+}
+
+/* line 83, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-close {
+  display: none;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  -webkit-filter: inherit;
+          filter: inherit;
+}
+
+/* line 93, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-css2 .gritter-close {
+  background: url("/assets/gritter.png") no-repeat left top;
+}
+
+/* line 96, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-css3 .gritter-close {
+  background: url("/assets/gritter-close.png") no-repeat;
+}
+
+/* line 100, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 0 7px 0;
+  display: block;
+  text-shadow: 1px 1px #000;
+  /* Not supported by IE :( */
+}
+
+/* line 107, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-image {
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
+/* line 113, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-with-image,
+.gritter-without-image {
+  padding: 0 0 5px 0;
+}
+
+/* line 116, /home/winter/.rvm/gems/ruby-2.1.5/gems/gritter-1.1.0/vendor/assets/stylesheets/gritter.css.scss */
+.gritter-with-image {
+  width: 220px;
+  float: right;
+}
